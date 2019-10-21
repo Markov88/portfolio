@@ -1,9 +1,13 @@
 const anchorTags = document.querySelectorAll('a')
 
-anchorTags.forEach((e) => e.addEventListener('click', scroll))
+anchorTags.forEach((e) => {
+    if (e.hasAttribute('href'))
+        e.addEventListener('click', scroll)
+})
 
 function scroll (event) {
-    event.preventDefault()
+    event.preventDefault(event)
+
     document.querySelector(this.getAttribute('href')).scrollIntoView({
         block: 'start',
         behavior: 'smooth'
@@ -20,4 +24,5 @@ function anim (el) {
     forms.classList.remove('checkBtn')
     void forms.offsetWidth
     forms.classList.add('checkBtn')
+
 }

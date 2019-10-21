@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -24,7 +24,7 @@
     <main>
         <section id='hero'>
             <div id='hero_content'>
-                <h1 id='hero_heading'>Hello! I`m <span id='hero_heading-name'>Todor Markov.</span><br>I`m a beginner.
+                <h1 id='hero_heading'>Hello! I`m <span id='hero_heading-name'>Todor Markov.</span><br>
                 </h1>
                 <a id='btn' href="#portfolio">Check my work</a>
             </div>
@@ -82,63 +82,22 @@
             <div id='cards_conteiner'>
                 <article class='card'>
                     <div class="card_img">
-                        <h3 class="card_heading"></h3>
-                        <p class="card_text"></p>
+                        <a class="card_anchor" onclick='window.open("https://triton.surge.sh");return false;'>
+                            <img src="./img/tritonImg.jpg" alt="link">
+                        </a>
                     </div>
-                    <div class="card_discription">
+                    <div class="card_description">
+                        <h3 class="card_heading">Triton</h3>
+                        <p class="card_text">Web application build with CSS3 and Vanilla JavaScript</p>
+                        <a class="view_code"
+                            onclick='window.open("https://github.com/Markov88/Sea-Food-Restaurant/tree/master/docs");return false;'>
+                            <span>GitHub <i class="fab fa-github"></i></span>
+                        </a>
                     </div>
-                </article>
-
-                <article class='card'>
-                    <div class="card_img">
-                        <h3 class="card_heading"></h3>
-                        <p class="card_text"></p>
-                    </div>
-                    <div class="card_discription">
-
-                    </div>
-                </article>
-
-                <article class='card'>
-                    <div class="card_img">
-                        <h3 class="card_heading"></h3>
-                        <p class="card_text"></p>
-                    </div>
-                    <div class="card_discription">
-
-                    </div>
-                </article>
-
-                <article class='card'>
-                    <div class="card_img">
-                        <h3 class="card_heading"></h3>
-                        <p class="card_text"></p>
-                    </div>
-                    <div class="card_discription">
-
-                    </div>
-                </article>
-
-                <article class='card'>
-                    <div class="card_img">
-                        <h3 class="card_heading"></h3>
-                        <p class="card_text"></p>
-                    </div>
-                    <div class="card_discription">
-
-                    </div>
-                </article>
-
-                <article class='card'>
-                    <div class="card_img">
-                        <h3 class="card_heading"></h3>
-                        <p class="card_text"></p>
-                    </div>
-                    <div class="card_discription">
-
-                    </div>
-                </article>
             </div>
+            </article>
+
+
         </section>
 
         <header class="section_header">
@@ -192,9 +151,16 @@
                     <a href="#portfolio" class='nav_footer_link'>Portfolio</a>
                     <a href="#contacts" class='nav_footer_link'>Contacts</a>
                     <span id='social_media'>
-                        <a href="#" class='social_media_icon'><i class="fab fa-github-square"></i></a>
-                        <a href="#" class='social_media_icon'><i class="fab fa-linkedin"></i></a>
+                        <a class='social_media_icon'
+                        onclick='window.open("https://github.com/Markov88");return false;'>
+                            <i class="fab fa-github-square"></i></a>
+
+                            
+                        <a class='social_media_icon'
+                            onclick='window.open("https://www.linkedin.com/in/todor-markov-1364ba193/");return false;'>
+                            <i class="fab fa-linkedin"></i></a>
                     </span>
+
                 </p>
             </div>
         </div>

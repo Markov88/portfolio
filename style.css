@@ -249,12 +249,67 @@ img {
 }
 
 .card {
-    width: calc(100% / 3 - 2rem);
-    height: 22rem;
-    border: 1px solid black;
-    margin: 1rem;
-    overflow: hidden;
-    background: rgb(71, 66, 66);
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 33%;
+    -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.75);
+    height: auto;
+    background: rgb(228, 228, 228);
+    text-align: center;
+    min-width: 27rem;
+}
+
+.card_img {
+    width: 100%;
+}
+
+.card_img img {
+    width: 100%;
+    object-fit: cover;
+    height: 17rem;
+}
+
+.card_heading {
+    font-size: 1.5rem;
+    color: rgb(46, 46, 46);
+    padding: .5rem;
+}
+
+.card_text {
+    padding: .5rem 0 2rem 0;
+    font-size: 1.1rem;
+}
+
+.view_code {
+    margin: 2rem 0;
+    font-size: 1.4rem;
+    cursor: pointer;
+    font-style: italic;
+    color: rgb(109, 109, 109);
+    font-weight: 600;
+    transition: .3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.view_code:hover {
+    color: rgb(106, 57, 197);
+    transition: .3s;
+}
+
+.card_anchor {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.card_anchor:hover {
+    opacity: .8;
+    transition: .3s;
+}
+
+.card_description {
+    padding: 0 1rem 1.5rem 1rem;
 }
 
 #contacts {
@@ -432,6 +487,7 @@ footer {
 
 .social_media_icon {
     margin-right: 1rem;
+    cursor:pointer;
 }
 
 .social_media_icon {
@@ -452,7 +508,7 @@ footer {
     #hero {
         height: 70vh;
     }
-    #hero_heading{
+    #hero_heading {
         font-size: 2.5rem;
     }
     #btn {
@@ -549,6 +605,15 @@ footer {
         width: 100%;
         padding-left: 0;
     }
+    .cards_conteiner {
+        justify-content: center;
+    }
+    .card {
+        flex: 1;
+    }
+    .card_img img {
+        height: 20rem;
+    }
 }
 
 @keyframes check {
@@ -572,22 +637,21 @@ footer {
 
 @keyframes nav {
     from {
-        transform: translateX(-25rem)  rotate(90deg) scale(0);
-         
+        transform: translateX(-25rem) rotate(90deg) scale(0);
     }
     to {
-        transform: translateX(0rem) rotate(0) scale(1) ;
-         
+        transform: translateX(0rem) rotate(0) scale(1);
     }
 }
 
-.bar:nth-of-type(3){
+.bar:nth-of-type(3) {
     animation-delay: .3s;
-    
 }
-.bar:nth-of-type(2){
+
+.bar:nth-of-type(2) {
     animation-delay: .6s;
 }
-.bar:nth-of-type(1){
+
+.bar:nth-of-type(1) {
     animation-delay: .9s;
 }
